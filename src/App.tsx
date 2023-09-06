@@ -1,3 +1,4 @@
+import { GlobalStyle } from "./styles/global"
 
 
 
@@ -7,8 +8,9 @@ export function App() {
   return (
 
     <div>
-      <h1>Bril Money</h1>
-
+      
+      <GlobalStyle/>
+        <h1>Bril Money</h1>
       
 
     </div>
