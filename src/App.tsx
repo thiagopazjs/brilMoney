@@ -1,3 +1,4 @@
+import { Header } from "./components/Header"
 import { GlobalStyle } from "./styles/global"
 
 
@@ -7,13 +8,13 @@ export function App() {
 
   return (
 
-    <div>
-      
-      <GlobalStyle/>
-        <h1>Bril Money</h1>
-      
+    <>
 
-    </div>
+      <GlobalStyle />
+      <Header />
+
+
+    </>
 
   )
 }
