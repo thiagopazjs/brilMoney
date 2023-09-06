@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
     
     :root {
         --background: #202024;
+        --backgroundshape:#29292E;
         --green: #00875F;
         --darkgreen: #015F43;
         --black: #121214;
@@ -12,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
         --searchbutton: #00B37E;
         --red: #F75A68;
         --textbase: #C4C4CC;
+        
 
 
 

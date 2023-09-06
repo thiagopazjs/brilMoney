@@ -8,7 +8,7 @@ export function Header() {
         <Container>
             <Content>
                <img src={igniteImg}  alt="bril-money"  /> <span>Bril Money</span> 
-                <button type="button" >
+                <button className='btn' type="button" >
                 Nova transação
                 </button>
             </Content>
