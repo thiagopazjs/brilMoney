@@ -19,6 +19,7 @@ export const Content = styled.div`
     span {
         color:white;
         margin-right: 46rem;
+        width:7.25rem;
     }
 
 
