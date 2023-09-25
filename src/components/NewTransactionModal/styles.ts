@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { darken } from 'polished';
+import { darken, transparentize } from 'polished';
 
 export const Container = styled.form`
 
@@ -63,6 +63,12 @@ gap: 0.5rem;
 
 interface RadioBoxProps {
  isActive: boolean;
+ isColorActive: 'green' | 'red';
+}
+
+const colors = {
+   green:'#00875F',
+   red: '#F75A68'
 }
 
 export const RadioBox = styled.button<RadioBoxProps> `
@@ -72,7 +78,8 @@ export const RadioBox = styled.button<RadioBoxProps> `
    border: 1px solid #d7d7dd;
    border-radius: 0.25rem;
 
-   background: ${(props) => props.isActive ? 'E6E6FA' : 'transparent'} ;
+   background: ${(props) => props.isActive 
+   ? transparentize(0.8, colors [props.isColorActive]) : 'transparent'} ;
 
    display: flex;
    align-items: center;
