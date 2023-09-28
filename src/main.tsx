@@ -10,6 +10,29 @@ createServer({
     transaction: Model,
   },
 
+  seeds(server) {
+    server.db.loadData({
+      transactions:[
+        {
+          id: 1,
+          title:'Freela Acelera',
+          type: 'deposit',
+          category:'Dev',
+          amount:'6000',
+          createdAt: new Date('2023-09-13 18:00'),
+        },
+        {
+          id: 2,
+          title:'Contas',
+          type: 'witdraw',
+          category:'casa',
+          amount:'1500',
+          createdAt: new Date('2023-09-14 09:00'),
+        },
+      ]
+    })
+  },
+
   routes() {
     this.namespace = 'api';
 
