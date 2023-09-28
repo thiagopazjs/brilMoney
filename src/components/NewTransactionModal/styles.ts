@@ -15,6 +15,7 @@ export const Container = styled.form`
     height: 4rem;
     border-radius: 0.25rem;
     resize: none;
+    color: #E1E1E6;
 
     border: 1px solid #d7d7d7;
     background: #121214;
