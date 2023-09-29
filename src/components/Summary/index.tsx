@@ -3,9 +3,13 @@ import iconDowImg from '../../assets/Icons down.svg'
 import iconMoneyImg from '../../assets/money.svg'
 
 import { Container } from "./styles";
+import { useContext } from 'react';
+import { TransactionsContext } from '../../TransactionsContext';
 
 
 export function Summary() {
+
+    const data = useContext(TransactionsContext);
 
     return (
         <Container>
