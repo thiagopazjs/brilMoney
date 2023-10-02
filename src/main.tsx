@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Model, createServer } from 'miragejs'
 import { App } from './App'
-import schema from 'miragejs/orm/schema'
+
 
 createServer({
 
